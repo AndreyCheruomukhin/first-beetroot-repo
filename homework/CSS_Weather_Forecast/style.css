@@ -1,0 +1,125 @@
+﻿*{transition: all .1s ease-in;
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+   font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+body {
+   
+    height: 100vh;
+    border:  20px solid #2B81AC ;
+    background-color: #3399CC;
+
+    
+}
+.heading{
+    display:block;
+    box-sizing: border-box;
+    height: 80px;
+    max-width: 50vw;
+    color: white;
+    margin: 0 auto;
+    padding-top: 15px ;
+    padding-bottom: 15px ;
+    font-size: 30px;
+}
+h1{
+    display:block;
+    box-sizing: border-box;
+   
+}
+ul{
+    list-style-type: none;
+    max-width: 50vw;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto 20px ;
+    font-size: 0;
+    color: white ;
+    transition: all .1s ease-in;
+}
+ ul:hover li:not(:hover){
+   opacity:0.5;
+}
+li{
+    box-sizing: border-box;
+    display:inline-block;
+    border: 3px solid white;
+    border-collapse: collapse;
+    font-size: 18px;
+    height: 100px;
+    padding: 20px 0;
+    text-align: center;}
+
+.cell-1{
+    background-color:#3399CC;
+    width: 50%;
+   
+}
+.cell-2{
+    background-color: #33CCCC;
+    width: 25%;
+}
+.cell-3{
+    background-color:#996699 ;
+    width: 25%;
+}
+.cell-4{
+background-color:#C24747 ;
+width: 25%;
+}
+.cell-5{
+background-color:#E2674A ;
+width: 25%;
+}
+.cell-6{
+background-color:#FFCC66 ;
+    width: 25%;
+}
+.cell-7{
+background-color:#99CC99 ;
+width: 25%;
+}
+.cell-8{
+    background-color:#669999 ;
+    width: 25%;
+}
+.cell-9{
+    background-color:#CC6699 ;
+    width: 50%;
+}
+.cell-10{
+    background-color:#339966 ;
+    width: 25%;
+}
+.cell-11{
+    background-color:#666699 ;
+    width: 100%;
+}
+.temperature {
+font-size: 18px;
+text-align: center;
+}
+.icon{
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;}
+
+.heading-icon{
+    max-width: 30px;
+    max-height: 30px;
+}
+footer{
+    display: block;
+    color:white ;
+    max-width: 50vw;
+    margin: 0 auto;
+}
+.footer-text{
+ font-size: 20px;
+ display: block;
+}
+
+ul li:active {
+background: #666699 ;}
+
