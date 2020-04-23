@@ -118,8 +118,11 @@ span{
     height: 540px ;
     margin: 0px 20px 20px 0px;
 }
-.grid2 .grid1 :last-child{
-    margin: 0px;
+.grid1 :last-child{
+    margin-right: 0;
+}
+.grid2 :last-child{
+    margin-right: 0;
 }
 .foto4{
     height: 250px;
