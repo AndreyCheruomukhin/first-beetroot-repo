@@ -1,0 +1,159 @@
+
+ @font-face {
+    font-family: 'Myriad Pro Regular';
+    src:  url('./assets/fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+ @font-face {
+    font-family: 'Myriad Pro Light';
+    src:url('./assets/fonts/MyriadPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #E2E7EC;
+    --blog-card-color: white;
+
+    --text-font: 'Myriad Pro Regular' sans-serif;
+    --date-font: 'Myriad Pro Light' sans-serif;
+
+    --main-text-color: black;
+    --text-color: white;
+}
+body{
+    font-family: var(--text-font);
+    background-color:  var(--bg-color);
+    font-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 100px 240px;
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    max-width: 100vh;
+}
+.grid2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    max-width: 100vh;
+}
+span{
+    display: block;
+}
+.blog-card1{
+    display:flex;
+    position:relative;
+    text-align: left;
+    width: 740px;
+    height: 540px ;
+    background-image: url("./assets/images/foto-1.png" alt="pic") no-repeat;
+    z-index: 1;
+    margin: 0px 20px 20px 0px;
+}
+.img-card1{
+    width: 740px ;
+}
+.blog-card1::after {
+    content: "";
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), #000000);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.card1-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.card1-text{
+    display: border-box;
+    position:absolute;
+    left:30px;
+    bottom:30px;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: var(--text-color) ;
+    z-index: 3;
+    font-family:var(--text-font);
+    text-transform: uppercase;
+}
+.card-link{
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 15px ;
+    text-transform: uppercase;
+}
+.blog-card{
+    position: relative;
+    background-color: var(--blog-card-color);
+    color: var(--main-text-color);
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    width: 360px;
+    height: 540px ;
+    margin: 0px 20px 20px 0px;
+}
+.grid2 .grid1 :last-child{
+    margin: 0px;
+}
+.foto4{
+    height: 250px;
+    margin-bottom: 50px;
+}
+.foto{
+    height: 250px;
+    margin-bottom: 20px;
+}
+.blog-card-text{
+    font-family: var(--text-font);
+    font-size: 16px;
+    padding: 0 20px;
+}
+.date{
+    font-family:var(--date-font);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.blog-card-foto-6{
+    position: absolute;
+    top: 85%;
+    bottom: 85%;
+    left: 10%;
+    right: 0;
+}
+.footer-icon {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon-img{
+    margin-right: 20px;
+}
+.footer-icon-text{
+    font-family:var(--date-font);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+a:hover {text-decoration: underline;}
