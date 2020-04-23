@@ -1,16 +1,22 @@
 
- @font-face {
-    font-family: 'Myriad Pro Regular';
-    src:  url('./assets/fonts/MyriadPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
- @font-face {
-    font-family: 'Myriad Pro Light';
-    src:url('./assets/fonts/MyriadPro-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
+@font-face {
+        font-family: 'Myriad_Pro_Light';
+        src: url('./assets/fonts/MyriadPro-Light.eot');
+        src: url('./assets/fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/MyriadPro-Light.woff') format('woff'),
+        url('./assets/fonts/MyriadPro-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+@font-face {
+        font-family: 'Myriad_Pro_Regular';
+        src: url('./assets/fonts/MyriadPro-Regular.eot');
+        src: url('./assets/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/MyriadPro-Regular.woff') format('woff'),
+        url('./assets/fonts/MyriadPro-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
 *{
     margin: 0;
     padding: 0;
@@ -20,8 +26,8 @@
     --bg-color: #E2E7EC;
     --blog-card-color: white;
 
-    --text-font: 'Myriad Pro Regular' sans-serif;
-    --date-font: 'Myriad Pro Light' sans-serif;
+    --text-font: 'Myriad_Pro_Regular';
+    --date-font: 'Myriad_Pro_Light';
 
     --main-text-color: black;
     --text-color: white;
