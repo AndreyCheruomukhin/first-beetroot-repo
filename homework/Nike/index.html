@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/images/icons8-nike-50.png" type="image/x-icon">
+    <title>Nike product</title>
+</head>
+<body>
+    <section class="main_card_background"> 
+        <div class="main_card">
+         <div class="left_section">
+            <div class="left_section--logotype">
+                 <img class="logotype" src="./assets/images/logo.png" alt="Nike">
+            </div>
+            <div class="left_section--product">
+                 <img class="product" src="./assets/images/Nike-SB-Stefan-Janoski-Max.png" alt="nike_product">
+            </div>
+            <div class="left_section--radio_btn">
+                <input type="radio" class="radio-input radio-1" name="radio-btn" id="radio-1" form="card-form" value="black">
+                <label class="radio-label left_section--radio_btn--black" for="radio-1"></label>
+           
+                <input type="radio" class="radio-input radio-2" name="radio-btn" id="radio-2" form="card-form" value="white">
+                <label class="radio-label left_section--radio_btn--white" for="radio-2"></label>
+    
+                <input type="radio" class="radio-input radio-3" name="radio-btn" id="radio-3" form="card-form" value="red">
+                <label class="radio-label left_section--radio_btn--red" for="radio-3"></label>
+        
+                <input type="radio" class="radio-input radio-4" name="radio-btn" id="radio-4" form="card-form" value="blue">
+                <label class="radio-label left_section--radio_btn--blue" for="radio-4"></label>
+            </div>
+         </div>
+         <div class="right_section">
+             <div class="right_section--text">
+                 <div>
+                 <span class="right_section--text--name_text">Nike SB Stefan Janoski Max</span></div>
+                 <div>
+                 <span class="right_section--text--discription_text">Unisex Skateboarding Shoe (Men's Sizing)</span></div>
+             </div>
+             <div class="right_section--rating">
+                  <img src="./assets/images/Stars.png" alt="Stars">
+             </div>
+             <div class="select_block">
+                    <div class="select_block_size">
+                        <div class="select_block-background"><img class="tic" width="15" height="15" src="./assets/images/tic.png" alt=""></div>
+                        <select class="select_wrapper select_block--size" name="size" id="">
+                            <option value="Size" selected>Size</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="select_block_qty">
+                        <div class="select_block-background"><img class="tic" width="15" height="15" src="./assets/images/tic.png" alt=""></div>
+                        <select class="select_wrapper select_block--qty" name="quantity" id=""> 
+                            <option value="Qty" selected>Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="select_block--btn" value="Add to card">Add to card</button>
+            </form>
+         </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
