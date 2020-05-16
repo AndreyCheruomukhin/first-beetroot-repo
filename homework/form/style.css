@@ -1,0 +1,185 @@
+@font-face{
+        font-family: 'Quicksand Bold';
+        src: url('Quicksand-Bold.eot');
+        src: url('Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/font/Quicksand-Bold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face{
+    font-family: 'Quicksand Regular';
+    src: url('Quicksand-Bold.eot');
+    src: url('Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/font/Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #CDBEBE;
+    --form-card-color: ;
+
+    --text-font:'Quicksand Bold';
+    --footer-text-font: 'Quicksand Regular';
+
+    --main-text-color: white;
+    --unchacked-text-color: lightgrey;
+    --btn-color:#23AE92;
+    --underline-active-color:#ec4444;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+.form{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background: url(./assets/images/bg-img.jpg) no-repeat;
+    background-size: cover;
+    box-shadow: 0px 15px 25px -5px rgba(50, 50, 50, 1);
+    padding: 50px 70px 120px 70px;
+    font-family: var(--text-font);
+}
+ header{
+     display: flex;
+     justify-content: left;
+     flex-direction: row;
+     min-height: 60px;
+ }
+ .sign-in-block, .join-us-block{
+     display: flex;
+     position: relative;
+     justify-content: center;
+     width: 64px;
+     height: 30px;
+    }
+     .sign-in, .join-us{
+       display: flex;
+      flex-direction:row;
+      text-decoration: none;
+     color: var(--unchacked-text-color);
+     font-size: 18px;
+ }
+ .sign-in{
+    margin-right: 40px;
+ }
+ .sign-in:hover, .join-us:hover{
+   display: block;
+   bottom: 0;
+   left: 0;
+   position: absolute;
+  content: "";
+  height: 2px;
+  width: 64px;
+  background-color: var(--underline-active-color);
+}
+ .text-form{
+    color: var(--main-text-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+ }
+ .text-radio{
+    color: var(--main-text-color);
+    font-size: 13px;
+ }
+ .input{
+     width:260px ;
+     height: 44px;
+     background: transparent ;
+     border: 1px solid var(--unchacked-text-color);
+     margin-bottom: 20px;
+ }
+ input[type='radio'] {
+   display: block;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+   
+  }
+  input[type='radio']::before {
+    content: '';
+    position: absolute;
+    background: var(--btn-color);
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 0%;
+    transform: translate(15%, 20%);
+    z-index: 1;
+    margin: 0;
+  }
+  .radio-label{
+    position: absolute;
+    z-index:2 ;
+  }
+  input[type='radio']:checked{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(./assets/images/check@1X.png) center no-repeat;
+    transform: translate(15%, 20%);
+    z-index: 3;
+  }
+  .radio-btn{
+      margin-bottom: 40px;
+  }
+  .form-btn{
+    width:260px;
+    height: 44px;
+    background-color:var(--btn-color);
+    font-family:var(--text-font);
+    color: var(--main-text-color);
+    font-size: 18px;
+    border: none; 
+    cursor: pointer;
+    margin-bottom: 34px;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .forgot-password, .create-an-account{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    width: 120px;
+    height: 20px;
+    font-size: 13px;
+    color: var(--unchacked-text-color);
+    font-family: var(--footer-text-font);
+  }
+.forgot-password:after, .create-an-account:after{
+  display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 120px;
+  background-color: var(--unchacked-text-color);
+  }
+  .forgot-password:hover, .create-an-account:hover{
+    color:var(--main-text-color) ;
+  }
+  
